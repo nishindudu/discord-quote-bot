@@ -1,8 +1,11 @@
 import requests
 import os
+from dotenv import load_dotenv
 
+project_folder = os.path.expanduser('~/discord-quote-bot')
+load_dotenv(os.path.join(project_folder, '.env'))
 
-url = os.environ.get("DISCORD_WEBHOOK_URL")
+url = os.getenv("DISCORD_WEBHOOK_URL")
 quote_url = "https://zenquotes.io/api/today"
 
 hello_world_data = {
