@@ -21,7 +21,11 @@ This is a simple Discord bot that sends a daily quote to a Discord channel using
 
 3. Install the required dependencies:
     ```sh
-    pip install -r requirements.txt
+    pip install dot_env
+    ```
+    Alternatively, you can set the `DISCORD_WEBHOOK_URL` environment variable directly in your shell:
+    ```sh
+    export DISCORD_WEBHOOK_URL=your_discord_webhook_url
     ```
 
 ## Usage
